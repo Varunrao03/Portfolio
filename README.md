@@ -1,46 +1,120 @@
-# Getting Started with Create React App
+# Varun Prasanna Rao - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, minimalist portfolio website built with React and TypeScript.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dynamic Animations**: Smooth entrance animations, letter-by-letter name reveal, and interactive hover effects
+- **Auto-Rotating Roles**: Professional titles that automatically cycle through different roles
+- **Interactive Elements**: Hover effects on profile picture, social links, and navigation button
+- **Particle Background**: Animated floating particles with connecting lines
+- **Mouse-Tracking Elements**: Background elements that respond to mouse movement
+- **Responsive Design**: Optimized for all device sizes
+- **TypeScript**: Full type safety and modern React patterns
+- **Professional Styling**: Clean, minimalist design with smooth transitions
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository or navigate to the project directory
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+### Running the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application will open in your browser at `http://localhost:3000`.
 
-### `npm run eject`
+### Building for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To create a production build:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Customization
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Personal Information
 
-## Learn More
+Update your personal information in `src/components/PortfolioLanding.tsx`:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Name: Update the `name` class content
+- Titles: Modify the `titles` class content
+- Social Links: Update the LinkedIn and GitHub URLs
+- Tagline: Change the introductory text
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Profile Picture
+
+To add your profile picture:
+
+1. Place your image in the `src/assets/` directory
+2. Import it in `PortfolioLanding.tsx`
+3. Replace the placeholder div with an `<img>` tag
+
+Example:
+```tsx
+import profileImage from '../assets/your-photo.jpg';
+
+// Replace the profile-picture-placeholder div with:
+<img src={profileImage} alt="Varun Prasanna Rao" className="profile-picture" />
+```
+
+### Styling
+
+The main styles are in `src/components/PortfolioLanding.css`. You can customize:
+
+- Colors: Update the CSS variables or color values
+- Typography: Modify font sizes, weights, and families
+- Layout: Adjust spacing, padding, and positioning
+- Responsive breakpoints: Update media queries
+
+### Adding More Sections
+
+To add additional portfolio sections:
+
+1. Create new components in `src/components/`
+2. Add routing logic to navigate between sections
+3. Update the navigation button to handle multiple pages
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── PortfolioLanding.tsx    # Main landing page component
+│   └── PortfolioLanding.css    # Styles for the landing page
+├── App.tsx                     # Main app component
+├── App.css                     # App-level styles
+├── index.tsx                   # Entry point
+└── index.css                   # Global styles
+```
+
+## Technologies Used
+
+- React 18
+- TypeScript
+- CSS3
+- Create React App
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+- LinkedIn: [Your LinkedIn Profile]
+- GitHub: [Your GitHub Profile]
