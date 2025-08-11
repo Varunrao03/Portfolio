@@ -1167,7 +1167,7 @@ const PortfolioLanding: React.FC = () => {
               </div>
               
               <div className="contact-buttons">
-                <button className="contact-btn primary" onClick={() => window.open('mailto:your.email@example.com', '_blank')}>
+                <button className="contact-btn primary" onClick={() => window.open('mailto:varunrao0301@gmail.com, '_blank')}>
                   Send Email
                 </button>
                 <button className="contact-btn secondary" onClick={() => handleNavigation('home')}>
